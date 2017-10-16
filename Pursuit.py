@@ -17,7 +17,7 @@ def config_screen():
     screen.setup(1360, 768, 0, 0)
     screen.tracer(0, 0)
 
-# PISTA
+# SPEEDWAY
 pista = Turtle()
 pista.hideturtle()
 pista.speed(0)
@@ -98,7 +98,7 @@ def draw_pista():
     pista.undo()
     pista.undo()
 
-# CAR
+# CARS
 player1 = Turtle()
 player1.speed(0)
 player1.penup()

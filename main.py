@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from turtle import Turtle, Screen
 import time
 
@@ -140,15 +142,6 @@ player_ratio = 30
 gameover = False
 
 def update_player(player):
-##    if player1.xcor() > 1360/2 or player1.xcor() < -1360/2:
-##        player1.goto(-(player1.xcor()), player1.ycor())
-##    if player1.ycor() > 720/2 or player1.ycor() < -720/2:
-##        player1.goto(player1.xcor(), -(player1.ycor()))
-##    if player2.xcor() > 1360/2 or player2.xcor() < -1360/2:
-##        player2.goto((-player2.xcor()), player2.ycor())
-##    if player2.ycor() > 720/2 or player2.ycor() < -720/2:
-##        player2.goto(player2.xcor(), -(player2.ycor()))
-    
     switch(player, player.heading())
 
     for p in players.values():
@@ -158,10 +151,10 @@ def update_player(player):
                 globals()['gameover'] = True
 
 def car_image(angle):
-    return "green_viper_" + str(int(angle)) + ".gif"
+    return "img/red_viper/red_viper_" + str(int(angle)) + ".gif"
 
 def car_image2(angle):
-    return "black_viper_" + str(int(angle)) + ".gif"
+    return "img/black_viper/black_viper_" + str(int(angle)) + ".gif"
 
 def forward(player):
     player.forward(move_speed)

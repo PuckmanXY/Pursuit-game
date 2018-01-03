@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 from turtle import Turtle, Screen
-import time
 
 # SCREEN
 screen = Screen()
